@@ -1,0 +1,67 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Grid Layout for Main Content */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust columns as needed */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+.home {
+  grid-column: 1 / 2; /* Span one column */
+}
+
+.image {
+  grid-column: 2 / 3; /* Span the other column */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  max-width: 50%;
+  height: 50%;
+  border-radius: 20%;
+}
+
+/* Additional Styles */
+.heading h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-one, .text-twof, .text-two, .text-three, .text-four {
+  margin: 10px 0;
+}
+
+.media-icons a {
+  margin: 0 10px;
+}
+
+.button button {
+  padding: 10px 20px;
+  background: #4070f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background: #3059e0;
+}
